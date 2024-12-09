@@ -53,6 +53,7 @@ if __name__ == "__main__":
     NVCC_FLAGS = [
         "-DENABLE_BF16=1",
         "-DBUILD_NUNCHAKU=1",
+        "-gencode", "arch=compute_77,code=sm_75",
         "-gencode", "arch=compute_86,code=sm_86",
         "-gencode", "arch=compute_89,code=sm_89",
         "-g",
